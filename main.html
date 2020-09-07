@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel=stylesheet type="text/css" href="hide square.css">
+<link rel=stylesheet type="text/css" href="headermenu.css">
+
+<!--main.html-->
+<style>
+
+@media only screen and (max-width: 900px){
+    .wrap{
+    	width: 100%;
+    	margin: auto;
+    	overflow: hidden;
+    }
+    .item{
+    	float: left;
+    	position: relative;
+    }
+    .item img{
+    	width: 100%;
+    	vertical-align: middle;
+    }
+    .item:first-child{
+    	width:100%;
+    }
+    .item:first-child ~ .item{
+    	width: 50%;
+    }
+    .item .txt{
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+    	padding: 15px;
+    	box-sizing: border-box;
+    	text-align: center;
+    	color: #fff;
+    	background-color: rgba(0,0,0,.6);
+    	display: flex;
+    	opacity: 0;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	transform: scale(0);
+    	transition: .5s;
+    }
+    .item:hover .txt{
+    	transform: scale(1);
+    	opacity: 1;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -o-user-select:none;
+        user-select:none;
+    }
+    .item h3{
+    	margin-bottom: .4em;
+    }
+    .item p{
+    	font-weight: 100;
+    	line-height: 1.7;
+    }
+}
+@media only screen and (min-width: 901px){
+    .wrap{
+        width: 100%;
+    	margin: auto;
+    	overflow: hidden;
+    }
+    .item{
+    	position: relative;
+    }
+    .item img{
+        width: 100%;
+    	vertical-align: middle;
+    	text-align: center;
+    }
+    .item:first-child{
+        /*margin: 0 auto;*/
+        float: left;
+    	width: 50%;
+    }
+    .item:first-child ~ .item{
+        float: left;
+    	width: 25%;
+    }
+    /**/
+    .item .txt{
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+    	padding: 15px;
+    	box-sizing: border-box;
+    	text-align: center;
+    	color: #fff;
+    	background-color: rgba(0,0,0,.6);
+    	display: flex;
+    	opacity: 0;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	transform: scale(0);
+    	transition: .5s;
+    }
+    .item:hover .txt{
+    	transform: scale(1);
+    	opacity: 1;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -o-user-select:none;
+        user-select:none;
+    }
+    .item h3{
+    	margin-bottom: .4em;
+    }
+    .item p{
+    	font-weight: 100;
+    	line-height: 1.7;
+    }
+}
+</style>
+</head>
+
+<body>
+<div id="box"></div>
+<nav role="navigation">
+    <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="main.html" target="_top"><li>Home首頁</li></a>
+      <a href="diary.html" target="_top"><li>Diarys日記</li></a>
+      <a href="info.html" target="_top"><li>Info資訊</li></a>
+      <a href="contact.html" target="_top"><li>Contact聯絡我</li></a>
+      <a href="https://drive.google.com/open?id=1Fbsb4G5luinkKp6VpvFE9CIdTo2SxypF" target="_top"><li>我的其他作品</li></a>
+    </ul>
+  </div>
+</nav>
+<!--/<div>-->
+<div class="composition"></div>
+
+
+<div class="wrap">
+	<div class="item">
+		<img src="https://i.imgur.com/nQC0zQI.jpg">
+		<div class="txt">
+			<h3>No matter where you are, that's where I belong.</h3>
+			<p>不論你在世界的哪個角落，那就是我的歸屬。</p>
+            <p>2019</p>
+		</div>
+	</div>
+	<div class="item">
+	    <!--https://i.imgur.com/QYgIhJ8.png-->
+		<img src="https://i.imgur.com/XEaQ6qo.png">
+		<div class="txt">
+			<h3>粉紅豬豬</h3>
+			<p>Piglet</p>
+      <p>2019</p>
+		</div>
+	</div>
+	<div class="item">
+	    <!--https://i.imgur.com/hdJFHmT.png-->
+		<img src="https://i.imgur.com/uAINbxZ.png">
+		<div class="txt">
+			<h3>溫馨的聖誕節</h3>
+			<p>Christmas</p>
+      <p>2019</p>
+		</div>
+	</div>
+	<div class="item">
+	    <!--https://i.imgur.com/gm3x6cn.png-->
+		<img src="https://i.imgur.com/Zun6VZw.jpg">
+		<div class="txt">
+			<h3>兔兔</h3>
+			<p>Cheers!</p>
+      <p>2019</p>
+		</div>
+	</div>
+	<div class="item">
+	    <!--https://i.imgur.com/JDOZA9D.png-->
+		<img src="https://i.imgur.com/KlEcqSf.png?1">
+		<div class="txt">
+			<h3>愛你</h3>
+			<p>Love you!</p>
+      <p>Forever</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
