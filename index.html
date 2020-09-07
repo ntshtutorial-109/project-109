@@ -10,9 +10,8 @@
 body{
     margin: 0;
     padding: 0;
-    /*https://i.imgur.com/3q3vl2D.jpg*/
     font-family: sans-serif;
-    background-image: url("https://i.imgur.com/3q3vl2D.jpg");
+    background-image: url("#");/*輸入圖片網址 */
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -21,11 +20,11 @@ table{
     margin: 0 auto;
 }
 h2{
-    text-transform: uppercase;*/
+    text-transform: uppercase;
     text-align: center;
 }
 @media only screen and (max-width: 900px){
-  .bg{
+  .background{
     width: 100%;
     position: absolute;
   }
@@ -96,9 +95,9 @@ h2{
       background: #2ecc71;
   }
 }
-    
+
 @media only screen and (min-width: 901px){
-  .bg{
+  .background{
     width: 100%;
     position: absolute;
   }
@@ -170,25 +169,25 @@ h2{
 }
 </style>
 <script language="JavaScript">
-function Login(){ 
-    var done=0; 
+function Login(){
+    var done=0;
     var username=document.login.username.value;
-    username=username.toLowerCase(); 
+    username=username.toLowerCase();
     var password=document.login.password.value;
-    password=password.toLowerCase(); 
-    if ((username=="chloe" && password=="0817")||(username=="josh"&&password=="1025")) {
-            window.location="main.html"; done=1; 
-        } 
+    password=password.toLowerCase();
+    if ((username=="root" && password=="password")) {
+            window.location="main.html";
+            done=1;
+        }
         if (done==0) {
             alert("帳號或密碼錯誤");
-        } 
+        }
     }
 </script>
 
 </head>
 <body BGPROPERTIES="FIXED">
-
-<div class="bg"></div>
+<div class="background"></div>
 <div class="padding"></div>
 <div class="translucent">
 <form name="login">

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel=stylesheet type="text/css" href="hide square.css">
+<link rel=stylesheet type="text/css" href="headermenu.css">
+<link rel=stylesheet type="text/css" href="topic.css">
+</head>
+<body>
+<div id="box"></div>
+<nav role="navigation">
+    <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" /><!-- 做一個按下退彈出選項的選單>
+
+    <!--
+    Some spans to act as a hamburger.
+
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span><!-- 做一個漢堡選單 -->
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu"><!-- 漢堡選單的內容 -->
+      <a href="main.html" target="_top"><li>首頁</li></a>
+      <a href="diary.html" target="_top"><li>#</li></a>
+      <a href="info.html" target="_top"><li>#</li></a>
+      <a href="contact.html" target="_top"><li>#</li></a>
+      <a href="#" target="_top"><li>#</li></a>
+    </ul>
+    </div>
+</nav>
+<div class="composition"></div><!-- 要考慮內文不能被選單遮擋 -->
+<!-- 內文 -->
+    <div class="background">
+        <div class="tag">
+            <a href="main.html" target="_top">首頁</a>
+            <b>>></b>
+            <a href="#">#</a>
+        </div>
+    </div>
+</body>
+</html>
