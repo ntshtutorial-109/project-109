@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 設定呈現的高度及寬度和裝置一致 -->
+<meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
+<!-- 引入字型庫 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel=stylesheet type="text/css" href="style.css">
+</head>
+<body>
+<!-- 導覽列 -->
+<nav role="navigation">
+  <div id="header">
+    <div id="menuToggle">
+    <!-- 建立一個用於接收是否按下選單的checkbox，接收後的動畫要在css部分的input:checked中設定 -->
+    <input type="checkbox">
+    <!-- 做一個漢堡選單 -->
+    <span></span>
+    <span></span>
+    <span></span>
+    <!-- 漢堡選單的內容 -->
+    <ul id="menu">
+      <a href="#" target="_top"><li>#</li></a>
+      <a href="#" target="_top"><li>#</li></a>
+      <a href="#" target="_top"><li>#</li></a>
+      <a href="#" target="_top"><li>#</li></a>
+      <a href="#" target="_top"><li>#</li></a>
+    </ul>
+    </div>
+  </div>
+</nav>
+<!-- <div class="composition"></div>要考慮內文不能被選單遮擋 -->
+<!-- 內文 -->
+    <div class="content"">
+    資料來源:https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function
+    </div>
+</body>
+</html>
